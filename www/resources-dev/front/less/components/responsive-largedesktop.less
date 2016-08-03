@@ -1,0 +1,36 @@
+.visible{
+  &-desktop{
+    &, &-inline, &-inline-block{
+      display: none !important;
+    }
+  }
+  &-largedesktop{
+    &{
+      display: block !important;
+    }
+    &-inline{
+      display: inline !important;
+    }
+    &-inline-block{
+      display: inline-block !important;
+    }
+  }
+}
+.hidden{
+  &-desktop{
+    &{
+      display: block !important;
+    }
+    &-inline{
+      display: inline !important;
+    }
+    &-inline-block{
+      display: inline-block !important;
+    }
+  }
+  &-largedesktop{
+    &, &-inline, &-inline-block{
+      display: none !important;
+    }
+  }
+}

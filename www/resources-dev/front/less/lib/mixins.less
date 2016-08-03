@@ -1,0 +1,26 @@
+.table-row-variant(@state; @background) {
+	// Exact selectors below required to override `&-striped` and prevent
+	// inheritance to nested tables.
+	& > thead > tr,
+	& > tbody > tr,
+	& > tfoot > tr {
+		> td.@{state},
+		> th.@{state},
+		&.@{state} > td,
+		&.@{state} > th {
+			background-color: @background;
+		}
+	}
+
+	// Hover states for `&-hover`
+	// Note: this is not available for cells or rows within `thead` or `tfoot`.
+	& > tbody > tr {
+		> td.@{state}:hover,
+		> th.@{state}:hover,
+		&.@{state}:hover > td,
+		&:hover > .@{state},
+		&.@{state}:hover > th {
+			background-color: darken(@background, 5%);
+		}
+	}
+}

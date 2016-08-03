@@ -1,0 +1,24 @@
+#util {
+	.ellipsis {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.opacity(@value) when (@value < 1) {
+		opacity: @value;
+		
+		@pvalue: round(@value * 100);
+		filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity=@{pvalue})";
+	}
+	.opacity(@value) when (@value = 1) {
+		opacity: 1;
+		filter: ~"progid:DXImageTransform.Microsoft.Alpha(enabled=false)";
+	}
+	.clearFloat {
+		&:after {
+			content:"";
+			display:block;
+			clear:both
+		}
+	}
+}

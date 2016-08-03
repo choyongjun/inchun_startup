@@ -1,0 +1,25 @@
+.board-default-list{
+	a{
+		padding-right: 69px + 78px;
+		background: url("@{baseComponentsImageDir}board-default-tablet/list.png") no-repeat 100% 50%;
+		
+		.last{
+			right: 69px;
+		}
+		&:focus, &:hover{
+			background: url("@{baseComponentsImageDir}board-default-tablet/list-2.png") no-repeat 100% 50%;
+		}
+	}
+	&.show-name{
+		a{
+			.last{
+				width: 78px + 78px;
+				
+				.name{
+					display: inline-block;
+					width: 78px;
+				}
+			}
+		}
+	}
+}

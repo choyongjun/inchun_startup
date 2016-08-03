@@ -1,0 +1,68 @@
+.board-faq-list,
+.board-faq-view{
+	.new{
+		display: inline-block;
+		background: url("@{baseComponentsImageDir}board-faq/new.png") no-repeat 0 0;
+		width: 16px;
+		height: 15px;
+	}
+	.updated{
+		display: inline-block;
+		background: url("@{baseComponentsImageDir}board-faq/updated.png") no-repeat 0 0;
+		width: 16px;
+		height: 15px;
+	}
+}
+.board-faq-list{
+	>li{
+		position: relative;
+		margin-bottom: -1px;
+		background-color: #fff;
+		background: url("@{baseComponentsImageDir}board-faq/list-3.png") no-repeat 13px 13px;
+		
+	    &:first-child{
+	    	border-top: none;
+	    }
+		.header{
+			display: block;
+			border: 1px solid #dfdfdf;
+			padding: 23px 69px 23px 68px;
+			background: url("@{baseComponentsImageDir}board-faq/list.png") no-repeat 100% 50%;
+			font-size: 16px;
+			font-weight: normal;
+			line-height: 1.4em;
+			letter-spacing: -1px;
+			color: #444444;
+		    cursor: pointer;
+			
+			span{
+				vertical-align: middle;
+			}
+		}
+		.content{
+			display: none;
+			background-color: #f7f8f9;
+			border-top: 1px solid #f0f0f0;
+			padding: 25px 108px 60px;
+			background: url("@{baseComponentsImageDir}board-faq/list-answer.png") no-repeat 68px 27px;
+		    border: 1px solid #a5a5a5;
+		    border-top: none;
+		}
+		&.on, &:focus, &:hover{
+			z-index: 1;
+			
+			.header{
+				border-color: #a5a5a5;
+				background: url("@{baseComponentsImageDir}board-faq/list-2.png") no-repeat 100% 50%;
+			}
+		}
+		&.on{
+			.header{
+				background: url("@{baseComponentsImageDir}board-faq/list-on.png") no-repeat 100% 50%;
+			}
+			.content{
+				display: block;
+			}
+		}
+	}
+}

@@ -1,0 +1,180 @@
+div.module-professor-class{
+	>ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		>li{
+			margin-bottom: -1px;
+			
+			>div{
+				position: relative;
+				border: 1px solid #dbdbdb;
+				transition: border-color .3s;
+				background-color: #fff;
+				padding: 15px 60px 0 134px;
+				height: 145px;
+				font-size: 12px;
+				line-height: 17px;
+				color: #999;
+			}
+			&:hover{
+				z-index: 1;
+				border-color: #969798;
+			}
+		}
+	}
+	.image{
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: inline-block;
+		width: 122px;
+		height: 100%;
+		border-right: 1px solid #dbdbdb;
+		
+		span{
+			margin: 6px;
+			display: block;
+			height: 148px;
+			background: url("@{baseComponentsImageDir}professor-class/image.png") no-repeat 50% 50%;
+		}
+	}
+	.subject{
+		display: block;
+		margin-bottom: 6px;
+		font-size: 16px;
+		line-height: 21px;
+		
+		strong{
+			margin-right: 3px;
+			color: #444;
+		}
+	}
+	.short-content{
+		max-height: 17px * 4;
+		overflow: hidden;
+		margin-bottom: 8px;
+		font-size: 12px;
+		line-height: 17px;
+	}
+	.phone{
+		color: #666;
+	}
+	.link{
+		position: absolute;
+		right: 0;
+		top: 0;
+		border-left: 1px solid #dbdbdb;
+		width: 53px;
+		height: 100%;
+		
+		a{
+			display: block;
+			height: 53px;
+			border-top: 1px solid #dbdbdb;
+			
+			&:first-child{
+				border-top: none;
+				height: 52px;
+			}
+		}
+		.email{
+			background: url("@{baseComponentsImageDir}professor-class/email.png") no-repeat 50% 50%;
+			cursor: not-allowed;
+			
+			&.on{
+				background: url("@{baseComponentsImageDir}professor-class/email-on.png") no-repeat 50% 50%;
+				cursor: pointer;
+			}
+		}
+		.website{
+			background: url("@{baseComponentsImageDir}professor-class/website.png") no-repeat 50% 50%;
+			cursor: not-allowed;
+			
+			&.on{
+				background: url("@{baseComponentsImageDir}professor-class/website-on.png") no-repeat 50% 50%;
+				cursor: pointer;
+			}
+		}
+		.view{
+			background: url("@{baseComponentsImageDir}professor-class/view.png") no-repeat 50% 50%;
+		}
+	}
+}
+div.module-professor-class-view{
+	position: relative;
+	padding: 30px;
+	min-height: 370px;
+	
+	.profile{
+		text-align: center;
+		
+		.image{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 154px;
+			border: 1px solid #dbdbdb;
+			margin-bottom: 12px;
+			
+			span{
+				margin: 6px;
+				display: block;
+				height: 186px;
+				background: url("@{baseComponentsImageDir}professor-class/image.png") no-repeat 50% 50%;
+			}
+		}
+		.subject{
+			display: block;
+			margin-bottom: 6px;
+			padding: 4px 0;
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 1.2em;
+			letter-spacing: -1px;
+			color: #39445a;
+			
+			strong{
+				font-size: 26px;
+			}
+		}
+		.short-content, .phone{
+			margin: 0;
+			font-size: 12px;
+			line-height: 17px;
+			color: #999;
+		}
+		.link{
+			margin-top: 24px;
+			
+			a{
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				border: 1px solid #dbdbdb;
+			}
+			.email{
+				background: url("@{baseComponentsImageDir}professor-class/email-2.png") no-repeat 50% 50%;
+				cursor: not-allowed;
+				
+				&.on{
+					background: url("@{baseComponentsImageDir}professor-class/email-2-on.png") no-repeat 50% 50%;
+					cursor: pointer;
+				}
+			}
+			.website{
+				background: url("@{baseComponentsImageDir}professor-class/website-2.png") no-repeat 50% 50%;
+				cursor: not-allowed;
+				
+				&.on{
+					background: url("@{baseComponentsImageDir}professor-class/website-2-on.png") no-repeat 50% 50%;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.content{
+		min-height: 332px;
+	}
+}

@@ -1,0 +1,25 @@
+.visible{
+  &-tablet, &-desktop, &-largedesktop{
+    &, &-inline, &-inline-block{
+      display: none !important;
+    }
+  }
+  &-phone{
+    &{
+      display: block !important;
+    }
+    &-inline{
+      display: inline !important;
+    }
+    &-inline-block{
+      display: inline-block !important;
+    }
+  }
+}
+.hidden{
+  &-phone{
+    &, &-inline, &-inline-block{
+      display: none !important;
+    }
+  }
+}

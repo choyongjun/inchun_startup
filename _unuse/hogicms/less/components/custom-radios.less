@@ -1,0 +1,40 @@
+.custom-radios{
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.custom-radios-input{
+	display: none;
+}
+.custom-radios-label{
+	float: left;
+	display: block;
+	background: url("@{baseComponentsImageDir}custom-radios/primary.png") repeat-x 0 0;
+	margin: 0;
+	padding: 7px 6px 5px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #333;
+	cursor: pointer;
+	
+	&:first-child{
+		background: url("@{baseComponentsImageDir}custom-radios/first.png") no-repeat 0 0;
+		padding-left: 8px;
+	}
+	&:last-child{
+		background: url("@{baseComponentsImageDir}custom-radios/last.png") no-repeat 100% 0;
+		padding-right: 8px;
+	}
+}
+.custom-radios-checked{
+	background-position: 0 100%;
+	color: #fff;
+	
+	&:first-child{
+		background-position: 0 100%;
+	}
+	&:last-child{
+		background-position: 100% 100%;
+	}
+}
